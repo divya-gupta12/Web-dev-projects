@@ -1,0 +1,94 @@
+/* Nav Bar */
+
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  padding: 30px;
+  padding-top: 35px;
+  font-family: "Fredericka the Great", cursive;
+  font-weight: 500;
+}
+/* Nav Bar list */
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Nav Bar element Site Name */
+.navbar li:first-child {
+  font-size: 35px;
+}
+/* Login Button or Link */
+.navbar li a {
+  outline: none;
+  text-decoration: none;
+  color: #f2f3f7;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 30px;
+  transition: all 175ms ease-out;
+}
+.navbar li a:hover {
+  background: rgba(123, 123, 124, 0.3);
+}
+
+/* Main Body */
+.mainbody {
+  text-align: center;
+  padding-top: 190px;
+  line-height: 1.2;
+}
+.mainbody h3 {
+  font-size: 45px;
+  word-spacing: 10px;
+  font-family: "Special Elite", cursive;
+}
+.mainbody h1 {
+  font-size: 70px;
+  font-family: "Press Start 2P", cursive;
+}
+
+/* Modal Box About */
+.modal-contianer-about {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 175ms linear;
+}
+
+.modal-contianer-about.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-about {
+  background: rgba(123, 123, 124, 0.3);
+  padding: 30px 50px;
+  width: 700px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-style: oblique;
+  font-weight: 600;
+}
