@@ -58,11 +58,12 @@
   width: 100vw;
   background: rgba(0, 0, 0, 0.6);
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   opacity: 0;
   pointer-events: none;
   transition: all 175ms linear;
+  z-index: 1;
 }
 
 .modal-contianer-about.show {
@@ -73,11 +74,14 @@
 .modal-about {
   background: rgba(123, 123, 124, 0.3);
   padding: 30px 50px;
+  margin-top: 525px;
   width: 700px;
   max-width: 100%;
   line-height: 1.5;
   border-radius: 5px;
   text-align: center;
+  height: fit-content;
+  font-size: 17px;
 }
 
 /* Footer */
@@ -91,4 +95,35 @@
   font-size: 18px;
   font-style: oblique;
   font-weight: 600;
+}
+
+.footer p {
+  margin-top: 120px;
+}
+
+.footer button {
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  font-family: "Fredericka the Great", cursive;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 30px;
+  transition: all 175ms linear;
+}
+
+.footer button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Reponsive CSS */
+@media only screen and (max-width: 425px) {
+  .mainbody {
+    padding-top: 0;
+    transform: scale(0.8);
+  }
+  .modal-about {
+    padding: 22px 20px;
+    margin: 400px 7px 0 7px;
+  }
 }
